@@ -235,6 +235,11 @@ img, svg {
     position: relative;
 }
 
+.mdi-plus {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
 .notif-btn:hover, .action-btn:hover {
     background-color: var(--bg-sidebar);
     color: var(--text-main);
@@ -449,11 +454,20 @@ img, svg {
     padding: 1.5rem;
 }
 
-.panel h3 {
+.panel h3, .panel-announcements h3 {
     font-size: 1.1rem;
     margin-bottom: 1.2rem;
     padding-bottom: 0.8rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.panel h3 .mdi, .panel-announcements h3 .mdi {
+    color: var(--accent);
+    font-size: 1.3rem;
 }
 
 .item {
