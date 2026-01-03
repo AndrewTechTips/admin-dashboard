@@ -156,3 +156,121 @@ img, svg {
     opacity: 0.8;
 }
 
+.header {
+    grid-area: header;
+    padding: 0.8rem 2rem;
+    border-bottom: var(--border);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    backdrop-filter: blur(16px);
+    background-color: rgba(15, 23, 42, 0.8);
+}
+
+.search-wrapper {
+    background-color: var(--bg-input);
+    border: 1px solid transparent;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    width: clamp(200px, 30vh, 400px);
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.2s;
+}
+
+.search-wrapper:focus-within {
+    border-color: var(--accent);
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.search-wrapper input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--text-main);
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+.user-area {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.notif-btn, .action-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-input);
+    border: var(--border);
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    transition: 0.2s;
+    position: relative;
+}
+
+.notif-btn:hover, .action-btn:hover {
+    background-color: var(--bg-sidebar);
+    color: var(--text-main);
+    border-color: var(--text-muted);
+}
+
+.badge {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    background-color: #ef4444;
+    color: white;
+    font-size: 0.6rem;
+    min-width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--bg-body);
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 1rem;
+    border-left: var(--border);
+}
+
+.profile-info img {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 2px solid var(--bg-card);
+}
+
+.profile-info .text-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    line-height: 1.2;
+}
+
+.profile-info .name {
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.profile-info .role {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+}
+
