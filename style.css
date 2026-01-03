@@ -414,3 +414,69 @@ img, svg {
     transform: scale(1.15);
 }
 
+.side-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.panel {
+    background-color: var(--bg-card);
+    border: var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+}
+
+.panel h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.item {
+    margin-bottom: 1rem;
+}
+
+.item h4 {
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+    color: var(--text-main);
+}
+
+.item p {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    line-height: 1.4;
+}
+
+.trend-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0.6rem;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+.trend-item:hover {
+    background-color: rgba(255, 255, 255, 0.03);
+    cursor: pointer;
+}
+
+.trend-item img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.trend-info strong {
+    font-size: 0.85rem;
+    color: var(--text-main);
+    display: block;
+}
+
+.trend-info p {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
