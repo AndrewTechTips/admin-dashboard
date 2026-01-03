@@ -92,6 +92,11 @@ img, svg {
     border-bottom: var(--border);
 }
 
+.logo .mdi {
+    color: var(--accent);
+    font-size: 1.8rem;
+}
+
 .logo .logo-icon {
     font-size: 1.6rem;
     filter: drop-shadow(0 0 8px var(--accent));
@@ -114,6 +119,10 @@ img, svg {
     font-size: 0.95rem;
     transition: all 0.2s ease-in-out;
     position: relative;
+}
+
+.sidebar a .mdi {
+    font-size: 1.2rem;
 }
 
 .sidebar a:hover {
@@ -184,6 +193,10 @@ img, svg {
     align-items: center;
     gap: 10px;
     transition: all 0.2s;
+}
+
+.search-icon {
+    font-size: 1.3rem;
 }
 
 .search-wrapper:focus-within {
@@ -318,7 +331,7 @@ img, svg {
 
 .cards-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
     gap: 1.5rem;
 }
 
@@ -407,6 +420,10 @@ img, svg {
     color: var(--text-muted);
     opacity: 0.7;
     transition: 0.2s;
+}
+
+.icons button .mdi {
+    font-size: 1.3rem;
 }
 
 .icons button:hover {

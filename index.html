@@ -10,6 +10,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css">
     </head>
 
     <body>
@@ -18,35 +19,38 @@
 
             <aside class="sidebar">
                 <div class="logo">
-                    <span class="logo-icon">💠</span> NEXUS
+                    <span class="mdi mdi-view-grid-plus logo-icon"></span> NEXUS
                 </div>
 
                 <nav>
                     <ul>
-                        <li class="active"><a href="#">📊 Dashboard</a></li>
-                        <li><a href="#">🚀 Deployments</a></li>
-                        <li><a href="#">🧪 Lab & Experiments</a></li>
-                        <li><a href="#">👥 Team Management</a></li>
-                        <li><a href="#">💳 Billing & Plans</a></li>
-                        <li><a href="#">📈 Analytics</a></li>
+                        <li class="active"><a href="#"><span class="mdi mdi-view-dashboard"></span> Dashboard</a></li>
+                        <li><a href="#"><span class="mdi mdi-rocket-launch"></span> Deployments</a></li>
+                        <li><a href="#"><span class="mdi mdi-flask"></span> Lab & Experiments</a></li>
+                        <li><a href="#"><span class="mdi mdi-account-group"></span> Team Management</a></li>
+                        <li><a href="#"><span class="mdi mdi-credit-card-outline"></span> Billing & Plans</a></li>
+                        <li><a href="#"><span class="mdi mdi-chart-line"></span> Analytics</a></li>
                     </ul>
                 </nav>
 
                 <div class="sidebar-footer">
-                    <a href="#">⚙️ Settings</a>
-                    <a href="#">❓ Help Center</a>
+                    <a href="#" class="mdi mdi-cog">Settings</a>
+                    <a href="#" class="mdi mdi-help-circle-outline">Help Center</a>
                 </div>
             </aside>
 
             <header class="header">
                 <div class="search-wrapper">
-                    <span class="search-icon">🔍</span>
+                    <span class="mdi mdi-magnify search-icon"></span>
                     <input type="text" placeholder="Search projects, logs, or APIs...">
                 </div>
 
                 <div class="user-area">
-                    <button class="action-btn" title="Create New">➕</button>
-                    <button class="notif-btn" title="Notifications">🔔<span class="badge">3</span> </button>
+                    <button class="mdi mdi-plus" title="Create New"></button>
+                    <button class="notif-btn" title="Notifications">
+                        <span class="mdi mdi-bell-outline"></span>
+                        <span class="badge">3</span> 
+                    </button>
 
                     <div class="profile-info">
                         <div class="text-info">
@@ -74,9 +78,9 @@
                             <p>Backend infrastructure for the new machine learning recommendation engine. running on AWS EC2.</p>
                             <div class="card-footer">
                                 <div class="icons">
-                                    <button title="Star">⭐</button>
-                                    <button title="View Code">👁️</button>
-                                    <button title="Fork">🔱</button>
+                                    <button title="Star"><span class="mdi mdi-star-outline"></span></button>
+                                    <button title="View Code"><span class="mdi mdi-eye-outline"></span></button>
+                                    <button title="Fork"><span class="mdi mdi-source-branch"></span></button>
                                 </div>
                             </div>
                         </article>
@@ -87,9 +91,9 @@
                             <p>A comprehensive design system for all internal tools. Migrating from Bootstrap to Tailwind CSS.</p>
                             <div class="card-footer">
                                 <div class="icons">
-                                    <button title="Star">⭐</button>
-                                    <button title="View Code">👁️</button>
-                                    <button title="Fork">🔱</button>
+                                    <button title="Star"><span class="mdi mdi-star-outline"></span></button>
+                                    <button title="View Code"><span class="mdi mdi-eye-outline"></span></button>
+                                    <button title="Fork"><span class="mdi mdi-source-branch"></span></button>
                                 </div>
                             </div>
                         </article>
@@ -100,9 +104,9 @@
                             <p>Maintenance mode. Fixing critical CORS issues reported by the mobile team yesterday.</p>
                             <div class="card-footer">
                                 <div class="icons">
-                                    <button title="Star">⭐</button>
-                                    <button title="View Code">👁️</button>
-                                    <button title="Fork">🔱</button>
+                                    <button title="Star"><span class="mdi mdi-star-outline"></span></button>
+                                    <button title="View Code"><span class="mdi mdi-eye-outline"></span></button>
+                                    <button title="Fork"><span class="mdi mdi-source-branch"></span></button>
                                 </div>
                             </div>
                         </article>
@@ -113,9 +117,9 @@
                             <p>Next-gen security module. Currently in the architectural review phase. Needs approval.</p>
                             <div class="card-footer">
                                 <div class="icons">
-                                    <button title="Star">⭐</button>
-                                    <button title="View Code">👁️</button>
-                                    <button title="Fork">🔱</button>
+                                    <button title="Star"><span class="mdi mdi-star-outline"></span></button>
+                                    <button title="View Code"><span class="mdi mdi-eye-outline"></span></button>
+                                    <button title="Fork"><span class="mdi mdi-source-branch"></span></button>
                                 </div>
                             </div>
                         </article>
@@ -126,9 +130,9 @@
                             <p>Big Data storage solution. Analyzing user behavior trends for Q3 marketing reports.</p>
                             <div class="card-footer">
                                 <div class="icons">
-                                    <button title="Star">⭐</button>
-                                    <button title="View Code">👁️</button>
-                                    <button title="Fork">🔱</button>
+                                    <button title="Star"><span class="mdi mdi-star-outline"></span></button>
+                                    <button title="View Code"><span class="mdi mdi-eye-outline"></span></button>
+                                    <button title="Fork"><span class="mdi mdi-source-branch"></span></button>
                                 </div>
                             </div>
                         </article>
@@ -139,9 +143,9 @@
                             <p>Refactoring the payment flow to support Apple Pay and Google Wallet integration.</p>
                             <div class="card-footer">
                                 <div class="icons">
-                                    <button title="Star">⭐</button>
-                                    <button title="View Code">👁️</button>
-                                    <button title="Fork">🔱</button>
+                                    <button title="Star"><span class="mdi mdi-star-outline"></span></button>
+                                    <button title="View Code"><span class="mdi mdi-eye-outline"></span></button>
+                                    <button title="Fork"><span class="mdi mdi-source-branch"></span></button>
                                 </div>
                             </div>
                         </article>
@@ -152,9 +156,9 @@
                             <p>Optimizing data retrieval speeds. Global cache hit ratio is currently at 98.5%.</p>
                             <div class="card-footer">
                                 <div class="icons">
-                                    <button title="Star">⭐</button>
-                                    <button title="View Code">👁️</button>
-                                    <button title="Fork">🔱</button>
+                                    <button title="Star"><span class="mdi mdi-star-outline"></span></button>
+                                    <button title="View Code"><span class="mdi mdi-eye-outline"></span></button>
+                                    <button title="Fork"><span class="mdi mdi-source-branch"></span></button>
                                 </div>
                             </div>
                         </article>
@@ -165,9 +169,9 @@
                             <p>Researching implementation of Passwordless Login and WebAuthn standards.</p>
                             <div class="card-footer">
                                 <div class="icons">
-                                    <button title="Star">⭐</button>
-                                    <button title="View Code">👁️</button>
-                                    <button title="Fork">🔱</button>
+                                    <button title="Star"><span class="mdi mdi-star-outline"></span></button>
+                                    <button title="View Code"><span class="mdi mdi-eye-outline"></span></button>
+                                    <button title="Fork"><span class="mdi mdi-source-branch"></span></button>
                                 </div>
                             </div>
                         </article>
@@ -178,9 +182,9 @@
                             <p>Investigating webhook failures from Stripe for recurring subscriptions in EU region.</p>
                             <div class="card-footer">
                                 <div class="icons">
-                                    <button title="Star">⭐</button>
-                                    <button title="View Code">👁️</button>
-                                    <button title="Fork">🔱</button>
+                                    <button title="Star"><span class="mdi mdi-star-outline"></span></button>
+                                    <button title="View Code"><span class="mdi mdi-eye-outline"></span></button>
+                                    <button title="Fork"><span class="mdi mdi-source-branch"></span></button>
                                 </div>
                             </div>
                         </article>
@@ -191,9 +195,9 @@
                             <p>Aligning the mobile app color palette with the new web dashboard design system.</p>
                             <div class="card-footer">
                                 <div class="icons">
-                                    <button title="Star">⭐</button>
-                                    <button title="View Code">👁️</button>
-                                    <button title="Fork">🔱</button>
+                                    <button title="Star"><span class="mdi mdi-star-outline"></span></button>
+                                    <button title="View Code"><span class="mdi mdi-eye-outline"></span></button>
+                                    <button title="Fork"><span class="mdi mdi-source-branch"></span></button>
                                 </div>
                             </div>
                         </article>
@@ -204,9 +208,9 @@
                             <p>Automated crawler for checking broken links and meta tags is now fully operational.</p>
                             <div class="card-footer">
                                 <div class="icons">
-                                    <button title="Star">⭐</button>
-                                    <button title="View Code">👁️</button>
-                                    <button title="Fork">🔱</button>
+                                    <button title="Star"><span class="mdi mdi-star-outline"></span></button>
+                                    <button title="View Code"><span class="mdi mdi-eye-outline"></span></button>
+                                    <button title="Fork"><span class="mdi mdi-source-branch"></span></button>
                                 </div>
                             </div>
                         </article>
@@ -217,9 +221,9 @@
                             <p>Proposal to switch from REST API to GraphQL to reduce over-fetching on mobile devices.</p>
                             <div class="card-footer">
                                 <div class="icons">
-                                    <button title="Star">⭐</button>
-                                    <button title="View Code">👁️</button>
-                                    <button title="Fork">🔱</button>
+                                    <button title="Star"><span class="mdi mdi-star-outline"></span></button>
+                                    <button title="View Code"><span class="mdi mdi-eye-outline"></span></button>
+                                    <button title="Fork"><span class="mdi mdi-source-branch"></span></button>
                                 </div>
                             </div>
                         </article>
@@ -230,7 +234,7 @@
                 <aside class="side-content">
 
                     <div class="panel-announcements">
-                        <h3>📢 System Broadcast</h3>
+                        <h3><span class="mdi mdi-bullhorn-variant-outline"></span> System Broadcast</h3>
 
                         <div class="item">
                             <h4>Scheduled Maintenance</h4>
@@ -254,7 +258,7 @@
                     </div>
 
                     <div class="panel trending">
-                        <h3>🏆 Top Contributors</h3>
+                        <h3><span class="mdi mdi-trophy-outline"></span> Top Contributors</h3>
                     
                         <div class="trend-item">
                             <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah" alt="User">
