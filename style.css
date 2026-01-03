@@ -1,0 +1,58 @@
+:root {
+    /*Colors for dark mode*/
+
+    --bg-body: #0f172a;
+    --bg-sidebar: #1e293b;
+    --bg-card: #1e293b;
+    --bg-input: rgba(255, 255, 255, 0.05);
+
+    --accent: #38bdf8;        /* Sky Blue */
+    --accent-glow: rgba(56, 189, 248, 0.15); 
+    
+    --text-main: #f8fafc;     /* White */
+    --text-muted: #94a3b8;    /* Gray */
+    
+    --border: 1px solid rgba(255, 255, 255, 0.08);
+    --radius: 12px;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+}
+
+/*Resseting the default styles*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    background-color: var(--bg-body);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    background: none;
+    border: none;
+    font-family: inherit;
+    color: inherit;
+    cursor: pointer;
+    padding: 0;
+}
+
+img, svg {
+    display: block;
+    max-width: 100%;
+}
+
