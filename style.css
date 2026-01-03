@@ -56,3 +56,103 @@ img, svg {
     max-width: 100%;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: clamp(240px, 20vh, 280px) 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 
+        "sidebar header"
+        "sidebar main";
+    min-height: 100vh;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: var(--bg-sidebar);
+    border-right: var(--border);
+    padding: 2rem 1.5rem;
+
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    z-index: 50;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-main);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 1.5rem;
+    border-bottom: var(--border);
+}
+
+.logo .logo-icon {
+    font-size: 1.6rem;
+    filter: drop-shadow(0 0 8px var(--accent));
+}
+
+.sidebar nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.sidebar a {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 0.8rem 1rem;
+    border-radius: 10px;
+    color: var(--text-muted);
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+}
+
+.sidebar a:hover {
+    background-color: rgba(255, 255, 255, 0.03);
+    color: var(--text-main);
+    transform: translateX(4px);
+}
+
+.sidebar li.active a {
+    background-color: var(--accent-glow);
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.sidebar li.active a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 60%;
+    width: 3px;
+    background-color: var(--accent);
+    border-radius: 0 4px 4px 0;
+    box-shadow: 0 0 8px var(--accent);
+}
+
+.sidebar-footer {
+    margin-top: auto;
+    padding-top: 1.5rem;
+    border-top: var(--border);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.sidebar-footer a {
+    font-size: 0.85rem;
+    padding: 0.6rem 1rem;
+    opacity: 0.8;
+}
+
