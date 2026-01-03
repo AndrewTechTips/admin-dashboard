@@ -35,8 +35,181 @@
                 </div>
             </aside>
 
-            <header class="header"></header>
+            <header class="header">
+                <div class="search-wrapper">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" placeholder="Search projects, logs, or APIs...">
+                </div>
 
+                <div class="user-area">
+                    <button class="action-btn" title="Create New">➕</button>
+                    <button class="notif-btn" title="Notifications">🔔<span class="badge">3</span> </button>
+
+                    <div class="profile-info">
+                        <div class="text-info">
+                            <span class="name">Andrew Dev</span>
+                            <span class="role">Admin</span>
+                        </div>
+                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Alex" alt="Avatar">
+                    </div>
+                </div>
+            </header>
+
+            <main class="main-content">
+
+                <section class="projects-section">
+                    <div class="section-header">
+                        <h2>Active Projects</h2>
+                        <button class="filter-btn">Filter by: All ▾</button>
+                    </div>
+
+                    <div class="cards-grid">
+
+                        <article class="card">
+                            <div class="card-status status-live">Live</div>
+                            <h3>Phoenix AI Core</h3>
+                            <p>Backend infrastructure for the new machine learning recommendation engine. running on AWS EC2.</p>
+                            <div class="card-footer">
+                                <div class="icons">
+                                    <button title="Star">⭐</button>
+                                    <button title="View Code">👁️</button>
+                                    <button title="Fork">🔱</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-status status-dev">In Dev</div>
+                            <h3>Nebula UI Kit</h3>
+                            <p>A comprehensive design system for all internal tools. Migrating from Bootstrap to Tailwind CSS.</p>
+                            <div class="card-footer">
+                                <div class="icons">
+                                    <button title="Star">⭐</button>
+                                    <button title="View Code">👁️</button>
+                                    <button title="Fork">🔱</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-status status-bug">Bug Fix</div>
+                            <h3>Legacy API Gateway</h3>
+                            <p>Maintenance mode. Fixing critical CORS issues reported by the mobile team yesterday.</p>
+                            <div class="card-footer">
+                                <div class="icons">
+                                    <button title="Star">⭐</button>
+                                    <button title="View Code">👁️</button>
+                                    <button title="Fork">🔱</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-status status-planning">Planning</div>
+                            <h3>CyberShield v2.0</h3>
+                            <p>Next-gen security module. Currently in the architectural review phase. Needs approval.</p>
+                            <div class="card-footer">
+                                <div class="icons">
+                                    <button title="Star">⭐</button>
+                                    <button title="View Code">👁️</button>
+                                    <button title="Fork">🔱</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-status status-live">Live</div>
+                            <h3>Customer Data Lake</h3>
+                            <p>Big Data storage solution. Analyzing user behavior trends for Q3 marketing reports.</p>
+                            <div class="card-footer">
+                                <div class="icons">
+                                    <button title="Star">⭐</button>
+                                    <button title="View Code">👁️</button>
+                                    <button title="Fork">🔱</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-status status-dev">In Dev</div>
+                            <h3>Mobile App React Native</h3>
+                            <p>Refactoring the payment flow to support Apple Pay and Google Wallet integration.</p>
+                            <div class="card-footer">
+                                <div class="icons">
+                                    <button title="Star">⭐</button>
+                                    <button title="View Code">👁️</button>
+                                    <button title="Fork">🔱</button>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </section>
+
+                <aside class="side-content">
+
+                    <div class="panel-announcements">
+                        <h3>📢 System Broadcast</h3>
+
+                        <div class="item">
+                            <h4>Scheduled Maintenance</h4>
+                            <p>Server downtime expected on Sunday at 03:00 AM UTC for database migration.</p>
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <div class="item">
+                            <h4>New Policy Update</h4>
+                            <p>We updated the 2FA requirements. All admins must enable hardware keys by Friday.</p>
+                        </div>
+
+                        <div class="divider"></div>
+                    
+                        <div class="item">
+                            <h4>Hackathon Winner!</h4>
+                            <p>Congratulations to the "Pixel Perfect" team for winning the internal UI challenge.</p>
+                        </div>
+                    
+                    </div>
+
+                    <div class="panel trending">
+                        <h3>🏆 Top Contributors</h3>
+                    
+                        <div class="trend-item">
+                            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah" alt="User">
+                            <div class="trend-info">
+                                <strong>@sarah_frontend</strong>
+                                <p>Nebula UI Kit</p>
+                            </div>
+                        </div>
+
+                        <div class="trend-item">
+                            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Mike" alt="User">
+                            <div class="trend-info">
+                                <strong>@mike_backend</strong>
+                                <p>Phoenix AI Core</p>
+                            </div>
+                        </div>
+
+                        <div class="trend-item">
+                            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Jessica" alt="User">
+                            <div class="trend-info">
+                                <strong>@jess_security</strong>
+                                <p>CyberShield v2.0</p>
+                            </div>
+                        </div>
+
+                        <div class="trend-item">
+                            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=David" alt="User">
+                            <div class="trend-info">
+                                <strong>@david_ops</strong>
+                                <p>Legacy API Gateway</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </aside>
+            </main>
         </div>
 
     </body>
